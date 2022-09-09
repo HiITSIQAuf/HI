@@ -1,0 +1,9 @@
+*{
+    object-fit: cover;
+}
+
+.locat, iframe{
+    margin: 0px 0px 100px;
+    border: none;
+    margin-top: 33px;
+}

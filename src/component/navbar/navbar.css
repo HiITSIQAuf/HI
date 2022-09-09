@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Oxygen:wght@300&family=Taviraj:ital,wght@1,200&display=swap');
+
+*{
+    object-fit: cover;
+}
+.span{
+    margin-left: 419px ;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    width: 100%;
+    background: #222120;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 6.7% 15px;
+}
+.nav_top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(201, 183, 183);
+}
+.nav_bot{
+    display: flex;
+    justify-content: center;
+}
+
+.icon_all {
+    font-size: 24px;
+}
+
+.icon_all,
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.nav_bot ul {
+    display: flex;
+}
+
+.nav_bot li, a{
+    margin: 0px 5px;
+    list-style: none;
+    font-size: 20px;
+    color: #eee;
+    text-decoration: none;
+    font-family: 'Taviraj', serif;
+}
+.icon_sin{
+    font-size: 24px;
+    color: white;
+    margin-right: 12px;
+}
+.icon_sin:nth-child(2),
+.icon_sin:nth-child(4){
+    font-size: 30px;
+}
+.icon_sin:nth-child(4){
+    margin-right: 22px;
+}
+.text_field{
+    color: #eee;
+}
+
+.nav_bot ul li, a{
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.nav_bot ul li::before,
+.nav_bot ul li::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, #080931, rgb(255, 255, 255));
+    transform: translateX(-100px);
+    opacity: 0;
+    /* box-shadow: 5px 5px 50px 5px white; */
+    transition: 1s;
+}
+.nav_bot ul li::before{
+    background: linear-gradient(to left, #080931, rgb(255, 255, 255));
+    transform: translateX(100px);
+}
+.nav_bot ul li:hover::after,
+.nav_bot ul li:hover::before{
+    transition: 1s;
+    opacity: 1;
+    transform: translateX(0px);
+}
+.mesh{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: -10px;
+    opacity: 0.8;
+    background: #eee;
+    border: none;
+    object-fit: cover;
+}
+.mesh1{
+    width: 35px;
+    height: 35px;
+    opacity: 1;
+    border-radius: 50%;
+    margin-left: -10px;
+    background: #eee;
+    border: none;
+}
+a{
+    transition: 1s;
+}

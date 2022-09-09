@@ -1,0 +1,110 @@
+small {
+    display: flex;
+}
+.blu{
+    position: absolute;
+    margin-left: 1215px;
+    margin-top: 90px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.25);
+    animation: animate 10s linear infinite;
+}
+
+.bube{
+    position: absolute;
+    margin-left: 1160px;
+    margin-top: 34px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.25);
+    animation: animate 10s linear infinite;
+}
+.bubble {
+    position: absolute;
+    margin-left: 94px;
+    margin-top: 34px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.25);
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    from {
+        transform: rotate(360deg);
+      }
+}
+
+.bubble .c-Small, .bube .b-small, .blu .d-small {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.bubble .c-Small:nth-child(1), .bube .b-small:nth-child(1), .blu .d-small:nth-child(1) {
+    inset: 10px;
+    border-left: 15px solid #6d777c;
+    filter: blur(3px);
+}
+
+.bubble .c-Small:nth-child(2), .bube .b-small:nth-child(2), .blu .d-small:nth-child(2) {
+    inset: 10px;
+    border-right: 15px solid #4f2d39;
+    filter: blur(3px);
+}
+
+.bubble .c-Small:nth-child(3), .bube .b-small:nth-child(3), .blu .d-small:nth-child(3) {
+    inset: 20px;
+    border-top: 15px solid #434239;
+    filter: blur(3px);
+}
+
+.bubble .c-Small:nth-child(4), .bube .b-small:nth-child(4), .blu .d-small:nth-child(4) {
+    inset: 30px;
+    border-left: 15px solid #615056;
+    filter: blur(2px);
+}
+
+.bubble .c-Small:nth-child(5), .bube .b-small:nth-child(5), .blu .d-small:nth-child(5) {
+    inset: 10px;
+    border-bottom: 15px solid rgb(78, 71, 71);
+    filter: blur(4px);
+    filter: blur(5px);
+    transform: rotate(330deg);
+
+}
+
+.bubble:nth-child(2) {
+    position: relative;
+    zoom: 0.45;
+    left: -10px;
+    top: -100px;
+    animation-delay: -4s;
+}
+
+.bubble:nth-child(3) {
+    position: relative;
+    zoom: 0.25;
+    right: -80px;
+    top: -300px;
+    animation-delay: -6s;
+}
+
+.bubble:nth-child(4) {
+    position: relative;
+    zoom: 0.35;
+    left: -120px;
+    bottom: -200px;
+    animation-delay: -3s;
+}
+
+.bubble:nth-child(5) {
+    position: relative;
+    zoom: 0.5;
+    top: 0px;
+    left: 200px;
+    animation-delay: -5s;
+}

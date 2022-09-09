@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap');
+
+*{
+    object-fit: cover;
+}
+.portfolio{
+    padding: 100px 0;
+}
+.prot{
+    width: 190px;
+    margin: auto;
+    text-align: center;
+    background: #222120;
+    color: #eee;
+    font-family: 'Cabin', sans-serif;    
+}
+.prot::before{
+    z-index: -1;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 50%;
+    margin-top: 19px;
+    height: 2px;
+    left: 0%;
+    background: #222120;
+}
+.prot::after{
+    z-index: -1;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    margin-top: -20px;
+    right: 0%;
+    background: #222120;
+}
+.container{
+    margin-top: 33px;
+    background: #222120;
+    border: 1px solid rgb(0, 55, 205);
+    width: 100%;
+    background: #242424;
+    
+}
+.gallary-port img{
+    float: left;
+    margin-right: 24px;
+    width: 500px;
+    height: 300px;
+
+}
+
+.gallary-us img{
+    width: 600px;
+    height: 300px;
+
+}
+.gallary-su{
+    width: 570px;
+    height: 300px;
+    float: left;
+    margin-right: 22px;
+}
+.gallary-or{
+    width: 570px;
+    height: 300px;
+
+}
